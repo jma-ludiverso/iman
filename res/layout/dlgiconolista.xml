@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/dlgIconoLista_contenedor"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+	<Button
+	    android:id="@+id/btnGaleria"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/dlgbtnGaleria"
+	    android:drawableLeft="@drawable/icon" />
+    
+	<Button
+	    android:id="@+id/btnCamara"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/dlgbtnCamara"
+	    android:drawableLeft="@drawable/icon" />
+	    
+</LinearLayout>

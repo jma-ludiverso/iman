@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/NuevaListaItemCategoria"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<TextView
+		android:id="@+id/lblNuevaListaItemCategoriaNombre"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="5dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="2dp"
+		android:text=""/>
+	
+	<CheckBox
+		android:id="@+id/chkNuevaListaItemNecesito"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dp"
+		android:layout_centerVertical="true"
+		android:textAppearance="?android:attr/textAppearanceSmall" 
+		android:background="@drawable/checkbox_background" android:button="@drawable/checkbox"/>
+ 
+            
+</RelativeLayout>
+    

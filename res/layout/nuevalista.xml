@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+ 
+   	<RelativeLayout android:id="@+id/relative1" android:layout_width="fill_parent" android:layout_height="50dp" 
+        android:background="@android:color/white">
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"	        
+	        android:contentDescription="@string/info_logo"
+	        android:src="@drawable/icon" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/imageView1"
+	        android:text="@string/hello" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/relativeLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/lblIconoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/lblIconoLista" />
+        
+        <ImageButton
+            android:id="@+id/imgIcono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/lblIconoLista"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/lblIconoLista"
+            android:padding="0dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/lblNombreLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblIconoLista"
+            android:layout_below="@+id/imgIcono"
+            android:layout_marginTop="22dp"
+            android:text="@string/lblNombreLista" />
+        <EditText
+            android:id="@+id/txtNombreLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblNombreLista"
+            android:layout_alignBottom="@+id/lblNombreLista"
+            android:layout_alignLeft="@+id/imgIcono"
+            android:layout_alignRight="@+id/btnNueva"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblDescripcionLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblNombreLista"
+            android:layout_below="@+id/txtNombreLista"
+            android:layout_marginTop="24dp"
+            android:text="@string/lblDescripcionLista" />
+
+        <EditText
+            android:id="@+id/txtDescripcionLista"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/txtNombreLista"
+            android:layout_alignRight="@+id/btnNueva"
+            android:layout_alignTop="@+id/lblDescripcionLista"
+            android:inputType="textMultiLine" />
+            
+        <Button
+            android:id="@+id/btnNueva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtDescripcionLista"
+            android:layout_marginRight="19dp"
+            android:text="@string/btnNueva" />
+        
+	    <TextView
+	        android:id="@+id/lblNuevaListaCategorias"
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:layout_alignLeft="@+id/relativeLayout1"
+	        android:layout_below="@+id/btnNueva"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/lblNuevaListaCategorias"
+	        android:gravity="center"
+	        android:background="@color/resaltoEtiquea" />
+
+		<ListView
+	        android:id="@+id/lvNuevaListaCategorias"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/lblNuevaListaCategorias" >
+
+	    </ListView>
+	    	    
+    </RelativeLayout>
+</LinearLayout>

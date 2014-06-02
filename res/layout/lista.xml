@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   	<RelativeLayout android:id="@+id/relative1" android:layout_width="fill_parent" android:layout_height="50dp" 
+        android:background="@android:color/white">
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"	        
+	        android:contentDescription="@string/info_logo"
+	        android:src="@drawable/icon" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/imageView1"
+	        android:text="@string/hello" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/relativeLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	    
+	    <ImageView
+	        android:id="@+id/imgListaIcono"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/icon"
+	        android:contentDescription="@string/lblIconoLista" />
+
+	    <TextView
+	        android:id="@+id/lblListaNombre"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/imgListaIcono"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/lblListaDescripcion"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/lblListaNombre"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/imgListaIcono"
+	        android:text=""/>	    
+	    
+	    <TextView
+	        android:id="@+id/txtListaTextoVista"
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:layout_alignLeft="@+id/relativeLayout1"
+	        android:layout_below="@+id/lblListaDescripcion"
+	        android:layout_marginTop="14dp"
+	        android:text="@string/lblCategoriasLista"
+	        android:gravity="center"
+	        android:background="@color/resaltoEtiquea" />
+
+
+	    <ListView
+	        android:id="@+id/lvMisCategorias"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignLeft="@+id/imgListaIcono"
+	        android:layout_below="@+id/txtListaTextoVista"
+	        android:layout_marginTop="22dp" >
+
+	    </ListView>
+	    	    
+	</RelativeLayout>
+
+</LinearLayout>
+    

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/dlgAddProducto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@android:color/white"
+    android:theme="@style/estilo_general">
+    
+   	    <TextView
+	        android:id="@+id/lblAddProducto"
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:layout_alignLeft="@+id/dlgAddProducto"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/lblAddProducto"
+	        android:gravity="center"
+	        android:background="@color/resaltoEtiquea" />
+   	    
+        <TextView
+            android:id="@+id/lblAddProductoCategoria1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dlgAddProducto"
+            android:layout_below="@+id/lblAddProducto"
+            android:layout_marginTop="10dp"
+            android:text="@string/lblAddProductoCategoria1" />
+        
+        <TextView
+            android:id="@+id/lblAddProductoCategoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblAddProductoCategoria1"
+            android:layout_toRightOf="@+id/lblAddProductoCategoria1"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtAddProductoNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblAddProductoCategoria2"           
+            android:layout_below="@+id/lblAddProductoCategoria1"
+            android:layout_marginTop="10dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblAddProductoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtAddProductoNombre"
+            android:layout_alignBottom="@+id/txtAddProductoNombre"
+            android:layout_alignParentLeft="true"
+            android:text="@string/lblAddProductoNombre" />
+
+		<RadioGroup
+		    android:id="@+id/rbTipoCantidad"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/txtAddProductoNombre"
+            android:layout_below="@+id/txtAddProductoNombre">
+
+		    <RadioButton
+		        android:id="@+id/rbPeso"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:textColor="@android:color/black"
+		        android:text="@string/lblrbPeso" />
+
+		    <RadioButton
+		        android:id="@+id/rbUnidades"
+		        android:layout_width="wrap_content"
+		        android:textColor="@android:color/black"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lblrbUnidades" />
+
+		</RadioGroup>
+		                        
+		<Button
+		    android:id="@+id/btndlgAddProducto"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/rbTipoCantidad"
+		    android:layout_alignParentRight="true"
+		    android:text="@string/btndlgAddProducto" />
+
+
+		        
+</RelativeLayout>

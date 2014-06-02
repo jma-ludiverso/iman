@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+   	<RelativeLayout android:id="@+id/relative1" android:layout_width="fill_parent" android:layout_height="50dp" 
+        android:background="@android:color/white">
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"	        
+	        android:contentDescription="@string/info_logo"
+	        android:src="@drawable/icon" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/imageView1"
+	        android:text="@string/hello" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/lblNuevaCategoria_Icono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/lblNuevaCategoria_Icono" />
+
+        <ImageButton
+            android:id="@+id/imgIcono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/lblNuevaCategoria_Icono"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/lblNuevaCategoria_Icono"
+            android:padding="0dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/lblNuevaCategoriaNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblNuevaCategoria_Icono"
+            android:layout_below="@+id/imgIcono"
+            android:layout_marginTop="22dp"
+            android:text="@string/lblNuevaCategoriaNombre" />
+
+        <EditText
+            android:id="@+id/txtNuevaCategoriaNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblNuevaCategoriaNombre"
+            android:layout_alignBottom="@+id/lblNuevaCategoriaNombre"
+            android:layout_alignLeft="@+id/imgIcono"
+            android:layout_marginRight="2dp"
+            android:layout_alignRight="@+id/btnNueva"            
+            android:inputType="text" />
+        
+        <Button
+            android:id="@+id/btnNuevaCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNuevaCategoriaNombre"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/btnNueva" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/lstItemListaProducto_contenedor"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imgQuitaProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/minus_24" 
+            android:contentDescription="@string/imgQuitaProducto"/>
+
+        <TextView
+            android:id="@+id/lblItemProductoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="7dp"
+            android:text=""
+            android:minWidth="140dp" 
+            android:maxWidth="140dp"/>
+
+	    <net.jma.iman.controlUnidades
+	        android:id="@+id/ctrlUnidades"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_toLeftOf="@+id/chkNecesito">
+	    </net.jma.iman.controlUnidades>
+
+    	<CheckBox
+    	    android:id="@+id/chkNecesito"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+    	    android:textAppearance="?android:attr/textAppearanceSmall" 
+    	    android:background="@drawable/checkbox_background" android:button="@drawable/checkbox"/>
+    
+    </RelativeLayout>
+
+
+	    
+</LinearLayout>

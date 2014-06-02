@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/llcontrolUnidades"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rlUnidades"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:drawable/btn_default_small"
+            android:text="@string/const_1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtUnidades"                       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnUp"
+            android:layout_alignBottom="@+id/btnUp"
+            android:layout_toRightOf="@+id/btnUp"
+            android:background="@android:color/white"
+            android:enabled="false"
+            android:hint="@string/const_2"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtUnidades"
+            android:background="@android:drawable/btn_default_small"
+            android:text="@string/const_3"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlKilos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" 
+        android:visibility="invisible"
+        android:layout_marginTop="-35dp"
+        android:layout_gravity="top">
+
+        <Spinner
+            android:id="@+id/drpKilos"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>            
+    
+</LinearLayout>

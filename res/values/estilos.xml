@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="estilo_general" parent="android:Theme.Light.NoTitleBar">
+	    <item name="android:typeface">normal</item>
+	    <item name="android:textSize">10dp</item>
+	</style>    
+	<color name="resaltoEtiquea">#ffff99</color>
+	<color name="lineaLista">#E0E0E0</color>
+	<color name="resaltoCategoria">#F9B115</color>
+</resources>

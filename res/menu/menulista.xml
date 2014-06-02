@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menListaCompartir" android:title="Compartir lista" android:icon="@drawable/ic_share"></item>
+    <item android:id="@+id/menListaLista" android:title="@string/menuListaLista" android:icon="@android:drawable/ic_menu_edit"></item>
+	<item android:id="@+id/menListaTienda" android:title="@string/menuListaTienda" android:icon="@drawable/ic_menu_shopping"></item>
+	<item android:id="@+id/menListaNuevaCategoria" android:title="Nueva categoría" android:icon="@drawable/ic_menu_database"></item>
+	<item android:id="@+id/menListaSeleccionarCategoria" android:title="Seleccionar categoría" android:icon="@drawable/ic_menu_database"></item>
+</menu>

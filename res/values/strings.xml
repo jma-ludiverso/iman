@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">El imán de la nevera</string>
+    <string name="email">E-mail: </string>
+    <string name="entrar">Entrar</string>
+    <string name="info_logo">App logo</string>
+    <string name="hello">El imán de la nevera</string>
+    <string name="password">Contraseña: </string>
+    <string name="btnRegistro">Registrar</string>
+    <string name="txtInfoRegistro">
+        Para poder utilizar la aplicación es necesario crear una cuenta asociada al teléfono.
+        Indica o confirma la dirección de email como nombre de usuario y crea una contraseña para completar el proceso.
+    </string>
+    <string name="lblTelefono">Teléfono: </string>
+    <string name="lblNuevaLista">Nueva lista</string>
+    <string name="lblMisListas">Mis listas de la compra</string>
+    
+    <string name="lblIconoLista">Icono de la lista</string>
+    <string name="lblNombreLista">Nombre de la lista</string>
+    <string name="lblDescripcionLista">Descripción larga</string>
+    <string name="btnNueva">Crear</string>
+    <string name="dlgTitulo">Seleccione el origen de la imagen</string>
+    <string name="lblNuevaListaCategorias">Categorias a incluir en la nueva lista</string>
+    <string name="dlgSeleccionCategoriaIncluir">Incluir en la lista</string>
+    <string name="dlgSeleccionCategoriaCancelar">Cancelar</string>
+    
+    <string name="lblNuevaCategoria_Icono">Icono de la categoría</string>
+    <string name="lblNuevaCategoriaNombre">Nombre de la categoría</string>
+    <string name="imgAddProducto">Añadir producto a la categoría</string>
+    
+    <string name="lblAddProducto">Nuevo producto</string>
+    <string name="lblAddProductoCategoria1">Categoría: </string>
+    <string name="lblAddProductoNombre">Producto: </string>
+    <string name="lblrbPeso">Producto al peso</string>
+    <string name="lblrbUnidades">Producto por unidades</string>
+    <string name="btndlgAddProducto">Añadir producto</string>
+    
+    <string name="dlgbtnGaleria">Imagen de la galería</string>
+    <string name="dlgbtnCamara">Imagen de la cámara</string>
+    
+    <string name="lblCategoriasLista">Contenido de la lista</string>
+    <string name="lblIconoCategoria">Categoría</string>    
+    <string name="imgQuitaProducto">Quitar producto</string>
+    
+    <string name="listaVistaListaLista">Haciendo la lista</string>
+    <string name="listaVistaListaTienda">Comprando &#8230;&#8230;&#8230;</string>
+    
+    <string name="lblCompartirListaContacto">Foto del contacto</string>
+    <string name="btnCompartirLista">Compartir lista</string>
+        
+    <string name="menuCerrarSesion">Cerrar sesión</string>
+    <string name="menuListaLista">Haciendo la lista</string>
+    <string name="menuListaTienda">En la tienda</string>  
+    <string name="menuCompartirActualizar">Actualizar contactos</string>  
+    
+    <string name="msgValidacionEvento">Falta completar información</string>
+    <string name="msgErrorLogin">Login incorrecto</string>
+    <string name="msgErrorCierreSesion">Error al cerrar sesión</string>
+    <string name="msgErrorRegistro">Se ha producido un error en el proceso de registro</string>
+    <string name="msgErrorDameContactos">Se ha producido un error al recuperar los contactos del teléfono</string> 
+    <string name="msgErrorLista">Se ha producido un error al guardar los datos de la lista</string>
+    <string name="msgErrorNuevaCategoria">Se ha producido un error al guardar la nueva categoría</string>
+    <string name="msgErrorNuevaCategoriaExiste">La categoría introducida ya existe</string>
+    <string name="msgErrorNuevoProducto">Se ha producido un error al guardar el nuevo producto</string>
+    <string name="msgErrorEliminarProducto">Se ha producido un error al eliminar el producto</string>
+    <string name="msgErrorEliminarLista">Se ha producido un error al eliminar la lista</string>
+    <string name="msgErrorEliminarCategoria">Se ha producido un error al eliminar la categoría</string>
+    <string name="msgErrorCompartirLista">No se ha podido compartir la lista</string>
+    
+    <string name="confirmacionEliminar">Confirmar eliminación</string>
+    <string name="confirmacionEliminar_Aceptar">Aceptar</string>
+    <string name="confirmacionEliminar_Cancelar">Cancelar</string>
+    <string name="confirmacionEliminar_Producto">¿Confirma la eliminación del producto seleccionado?</string>
+    <string name="confirmacionEliminar_Categoria">¿Confirma la eliminación de la categoría seleccionada?</string>
+    <string name="confirmacionEliminar_Lista">¿Confirma la eliminación de la lista seleccionada?</string>
+    
+    <string name="const_1"> + </string>
+    <string name="const_2"> 0 </string>
+    <string name="const_3"> - </string>
+    
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/lstItemLista_contenedor"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:id="@+id/rlItemLista"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	
+	    <ImageView
+	        android:id="@+id/imgIcono"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/icon"
+	        android:contentDescription="@string/lblIconoLista" />
+
+	    <TextView
+	        android:id="@+id/lblNombreLista"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/imgIcono"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/lblDatosLista"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/lblNombreLista"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/imgIcono"
+	        android:text=""/>
+	    	    		    
+	</RelativeLayout>    
+    
+</LinearLayout>

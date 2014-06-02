@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	android:id="@+id/lstItemLista_contenedor"  
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical" 
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/categoria">
+
+    <RelativeLayout android:id="@+id/rlCerrada"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+        
+        <ImageView android:id="@+id/imgItemCategoriaNombre"
+	        android:layout_width="36dp"
+	        android:layout_height="36dp"
+	        android:src="@drawable/icon" 
+	        android:contentDescription="@string/lblIconoCategoria"/>
+
+        <TextView
+	        android:id="@+id/lblItemCategoriaNombre"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/imgItemCategoriaNombre"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imgAddProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lblItemCategoriaNombre"
+            android:layout_marginRight="14dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/imgAddProducto"
+            android:src="@drawable/plus_24" />
+        	        	    	    
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/llProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+                        
+        </LinearLayout>
+    </ScrollView>
+			    	    
+</LinearLayout>
